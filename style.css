@@ -1,0 +1,73 @@
+
+.header {
+
+
+    border: 3px solid blue;
+
+}
+.header1 {
+
+
+     border: 3PX solid black;
+}
+.header2 {
+  border: 3PX solid black;
+
+}
+.header3 {
+
+  border: 3PX solid red; 
+}
+.header4{
+ 
+  border: 3PX solid blue; 
+}
+.header5{
+  border: 3PX solid black; 
+
+
+}
+.header6{
+  border: 3PX solid orange; 
+
+
+}
+
+
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  .tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  .grid-container {
+
+    display: grid;
+  }
+  h3 {
+
+    letter-spacing: 5px;
+  }
+  p {
+
+    font-size: 20px;
+  }
+
+  
+  

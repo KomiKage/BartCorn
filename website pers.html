@@ -1,0 +1,94 @@
+
+<body style="background-image: url('back5.jfif');">
+<link rel="stylesheet" href="style.css">
+<button class="tablink" onclick="openPage('Home', this, 'red')">symptoms</button>
+<button class="tablink" onclick="openPage('News', this, 'blue')" id="defaultOpen">Heatmap</button>
+<button class="tablink" onclick="openPage('Contact', this, 'black')">extra features</button>
+<button class="tablink" onclick="openPage('About', this, 'red')">video</button>
+<div id="Home" class="tabcontent">
+    <h3 class = header2>symptoms of corona</h3>
+    <p class = header3>  
+      Most common symptoms:<br>
+fever<br>
+dry cough<br>
+tiredness<br>
+Less common symptoms:<br>
+aches and pains<br>
+sore throat<br>
+diarrhoea<br>
+conjunctivitis<br>
+headache<br>
+loss of taste or smell<br>
+a rash on skin, or discolouration of fingers or toes<br>
+    </P>
+  
+       
+  </div>
+  
+  <div  id="News" class="tabcontent "class="grid-container">
+    <h3 class =header2>Heatmap</h3>
+    <p class =header4>
+      Heat Map
+Our plan is to build a website as well as an app that will track the corona virus.<br> 
+What the app will do is that people that get the corona virus will upload their location to our system and then the map will be updated to show where are the sick.<br>
+To protect the safety of the sick, the map will not show the exact locations, but it will show 2 circles.<br>
+One of them (the smaller one) is 500 by 500 m and somewhere in this circle is the house of the sick.<br>
+ And then there is another circle which is 750m by 750m which shows the area to avoid.<br>
+  To make sure that the map gets updated properly, we will work together with the doctors so that after someone is tested positive the map gets updated by the staff and not by the sick. <br>
+  To ensure that people do not skip the registration.<br>
+   Links to sites which you can order food from if you cannot leave home. <br>
+   Maps will also be color coded from green to red. Green being safe zones and red being danger zones.<br>
+    The zones are decided by the amount of people that are sick within an area and the more people are sick in an area the more the colour changes to red.
+
+       </p>
+       <img src="pedro-lastra-Nyvq2juw4_o-unsplash.jpg" alt="game" width="500" height="400">
+  </div>
+  
+  <div id="Contact" class="tabcontent">
+    <h3 class =header2>extra features</h3>
+    <p class =header5>
+      Since this is a pandemic, more people than ever are having mental problems.<br>
+      These problems may lead to complications in their future life if they get any worse. <br>
+      To prevent people from becoming depressed or other things like that,<br>
+       our app will provide contacts to trusted online therapist so that even people that are sick and cant leave home could get their treatment.<br>
+    </p>
+    <img src="Corona banner.jpg" width="500" height="400">
+       
+      
+  </div>
+ 
+  
+  <div id="About" class="tabcontent">
+    <h3>
+      <iframe width="420" height="315" 
+      src="https://www.youtube.com/embed/n0z_bwHziXw ">
+      </iframe>
+    <p>
+        </p>
+     
+  </div>
+<script>
+   function openPage(pageName, elmnt, color) {
+// alleen de button laten zien
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+tabcontent[i].style.display = "none";
+}
+
+// geen achtergrond
+tablinks = document.getElementsByClassName("tablink");
+for (i = 0; i < tablinks.length; i++) {
+tablinks[i].style.backgroundColor = "";
+}
+
+// tab content
+document.getElementById(pageName).style.display = "block";
+
+// kleur button
+elmnt.style.backgroundColor = color;
+}
+
+
+document.getElementById("defaultOpen").click();
+</script>
